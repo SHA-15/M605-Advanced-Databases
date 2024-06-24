@@ -8,7 +8,9 @@ ABC Inc., since its inception, has exponentially expanded its operations across 
 <p align="center">
   <img src="./ERD.png">
 </p>
+
 ## IMPORTING SQL FILES
+
 ** PLEASE NOTE: THE PROJECT WAS CREATED ON MYSQL 8.4.0 HENCE CERTAIN FUNCTIONALITIES MAYBE DIFFERENT TO YOUR VERSION OF MYSQL.
 To check the version of mysql running on your MAC:
 

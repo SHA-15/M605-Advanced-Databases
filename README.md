@@ -21,3 +21,20 @@ mysql -u root -p
 # You will be prompted to enter your password
 Password:
 ```
+Once you have connected to the mysql Terminal indicated by:
+
+```zsh
+mysql>
+```
+Enter the command
+```sql
+--Create a Database for .sql dump
+CREATE DATABASE database_name;
+
+--Select the created database
+USE database_name;
+
+--Once the database is chosen, the .sql dump file can be imported using the following command:
+source /path/to/your/file.sql
+# Replace the filepath with where your .sql is saved in
+```

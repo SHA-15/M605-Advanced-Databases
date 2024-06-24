@@ -11,6 +11,13 @@ ABC Inc., since its inception, has exponentially expanded its operations across 
 ## IMPORTING SQL
 To run the SQL file, following are the commands to be used for MAC TERMINAL on .zsh/.bash shell
 
-´´´bash
-Hi
-´´´
+```zsh
+# Initiate the MySQL Server
+mysql.server start
+
+# Establish connection with MySQL with user 'root'
+mysql -u root -p
+
+# You will be prompted to enter your password
+Password:
+```

@@ -8,3 +8,9 @@ ABC Inc., since its inception, has exponentially expanded its operations across 
 <p align="center">
   <img src="./ERD.png">
 </p>
+## IMPORTING SQL
+To run the SQL file, following are the commands to be used for MAC TERMINAL on .zsh/.bash shell
+
+´´´bash
+Hi
+´´´

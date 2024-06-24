@@ -8,7 +8,20 @@ ABC Inc., since its inception, has exponentially expanded its operations across 
 <p align="center">
   <img src="./ERD.png">
 </p>
-## IMPORTING SQL
+## IMPORTING SQL FILES
+** PLEASE NOTE: THE PROJECT WAS CREATED ON MYSQL 8.4.0 HENCE CERTAIN FUNCTIONALITIES MAYBE DIFFERENT TO YOUR VERSION OF MYSQL.
+To check the version of mysql running on your MAC:
+
+```zsh
+mysql --version
+```
+
+Output:
+
+```zsh
+mysql  Ver 8.4.0 for macos14 on arm64 (MySQL Community Server - GPL)
+```
+
 To run the SQL file, following are the commands to be used for MAC TERMINAL on .zsh/.bash shell
 
 ```zsh

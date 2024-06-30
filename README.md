@@ -6,7 +6,7 @@ ABC Inc., since its inception, has exponentially expanded its operations across 
 
 ## ERD Design
 <p align="center">
-  <img src="./ERD.png">
+  <img src="./ERD_M605.png">
 </p>
 
 ## IMPORTING SQL FILES

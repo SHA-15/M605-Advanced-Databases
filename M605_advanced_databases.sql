@@ -75,7 +75,8 @@ CREATE TABLE `customers` (
   `password` varchar(100) DEFAULT NULL,
   `login_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `customer_creation` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  KEY `idx_customer_email` (`email`)
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -676,7 +677,8 @@ CREATE TABLE `vendors` (
   `vendor_contact` varchar(20) DEFAULT NULL,
   `vendor_address` varchar(255) NOT NULL,
   `created_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  KEY `idx_supplier_email` (`vendor_email`)
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -716,7 +718,6 @@ CREATE TABLE `wishlist` (
 
 LOCK TABLES `wishlist` WRITE;
 /*!40000 ALTER TABLE `wishlist` DISABLE KEYS */;
-INSERT INTO `wishlist` VALUES (1,1,20,'2024-06-30 20:00:46'),(2,2,18,'2024-06-30 20:00:46'),(3,3,15,'2024-06-30 20:00:46'),(4,4,13,'2024-06-30 20:00:46'),(5,5,16,'2024-06-30 20:00:46'),(6,6,12,'2024-06-30 20:00:46'),(7,7,19,'2024-06-30 20:00:46'),(8,8,17,'2024-06-30 20:00:46'),(9,9,11,'2024-06-30 20:00:46'),(10,10,5,'2024-06-30 20:00:46');
 /*!40000 ALTER TABLE `wishlist` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -855,4 +856,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-06-30 23:01:35
+-- Dump completed on 2024-07-03  2:50:59

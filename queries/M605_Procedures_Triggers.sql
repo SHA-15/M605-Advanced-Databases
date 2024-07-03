@@ -18,6 +18,17 @@ FROM orders o
 JOIN customers c ON o.customer_id = c.id
 GROUP BY o.customer_id;
 
+# INDEX on customer emails for quicker email based retrieval
+CREATE INDEX idx_customer_email
+ON customers (email);
+
+SHOW INDEX FROM customers;
+
+# Index on Supplier emails for faster supplier retrieval
+CREATE INDEX idx_supplier_email
+ON vendors (vendor_email);
+
+SHOW INDEX FROM vendors;
 
 /* Triggers to allow Data Manipulation across multiple tables that are impacted in a relation to Insert, Update and Delete processes */
 # Inserting LoginHistory for every time there is a new customer created
